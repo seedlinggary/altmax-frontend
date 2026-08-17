@@ -39,7 +39,7 @@ export default function Header() {
 
       <div className="container-page flex items-center justify-between py-4">
         <Link to="/" className="shrink-0" aria-label="Altmax Property Management home">
-          <Logo tagline className="text-2xl sm:text-3xl" />
+          <Logo tagline size="lg" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">

@@ -1,21 +1,28 @@
-const VARIANTS = {
-  default: 'text-regal-blue',
-  inverse: 'text-white',
-  charcoal: 'text-charcoal',
+import logoOnWhite from '../assets/logo/logoonwhite.png'
+import logoOnBlue from '../assets/logo/logoonblue.png'
+
+const SOURCES = {
+  default: logoOnWhite,
+  charcoal: logoOnWhite,
+  inverse: logoOnBlue,
 }
 
-export default function Logo({ variant = 'default', className = '', tagline = false }) {
-  const textColor = VARIANTS[variant] || VARIANTS.default
+const SIZES = {
+  sm: 'h-6',
+  md: 'h-8 sm:h-9',
+  lg: 'h-9 sm:h-11',
+}
+
+export default function Logo({ variant = 'default', size = 'md', className = '', tagline = false }) {
+  const src = SOURCES[variant] || SOURCES.default
+  const heightClass = SIZES[size] || SIZES.md
 
   return (
     <span className={`inline-flex flex-col select-none ${className}`}>
-      <span className={`font-wordmark font-light tracking-[0.14em] ${textColor}`}>
-        ALTMA
-        <span className="text-sky-dark">X</span>
-      </span>
+      <img src={src} alt="Altmax Property Management" className={`w-auto ${heightClass}`} />
       {tagline && (
         <span
-          className={`font-sans text-[0.55em] font-medium tracking-[0.2em] uppercase mt-0.5 ${
+          className={`font-sans text-[11px] sm:text-xs font-medium tracking-[0.2em] uppercase mt-1.5 ${
             variant === 'inverse' ? 'text-sky-light' : 'text-charcoal-light'
           }`}
         >

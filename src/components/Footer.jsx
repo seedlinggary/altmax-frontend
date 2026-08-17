@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-regal-blue-950 text-sky-light">
       <div className="container-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-14">
         <div>
-          <Logo variant="inverse" tagline className="text-2xl mb-4" />
+          <Logo variant="inverse" tagline size="md" className="mb-4" />
           <p className="text-sm text-sky-light/80 max-w-xs">
             Caring & honest, exclusive condo & co-op property management across New York City.
           </p>
