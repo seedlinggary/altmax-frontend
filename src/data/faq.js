@@ -40,7 +40,7 @@ export const faqCategories = [
       {
         question: 'Who do I contact for emergencies?',
         answer:
-          'For floods, gas leaks, no heat, or no hot water, call our 24/7 emergency hotline at 718.687.4683. For any life-threatening emergency, always call 911 first.',
+          'For floods, gas leaks, no heat, or no hot water, call our 24/7 emergency hotline at 718.536.1200. For any life-threatening emergency, always call 911 first.',
       },
     ],
   },

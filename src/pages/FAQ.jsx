@@ -42,7 +42,7 @@ export default function FAQ() {
               <h3 className="font-sans font-bold text-red-800">Building emergency?</h3>
               <p className="text-sm text-red-700 mt-1">
                 For floods, gas leaks, or no heat/hot water, call our 24/7 emergency hotline at{' '}
-                <a href="tel:7186874683" className="font-semibold underline">718.687.4683</a>. For any
+                <a href="tel:7185361200" className="font-semibold underline">718.536.1200</a>. For any
                 life-threatening emergency, always call 911 first.
               </p>
             </div>

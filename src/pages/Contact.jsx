@@ -9,7 +9,7 @@ export default function Contact() {
       <SEO
         path="/contact"
         title="Contact & Request a Proposal"
-        description="Contact Altmax Property Management or request a custom proposal for your NYC condo or co-op. Call 718.687.4683 or email info@altmaxny.com — we respond within 24 hours."
+        description="Contact Altmax Property Management or request a custom proposal for your NYC condo or co-op. Call 718.536.1200 or email info@altmaxny.com — we respond within 24 hours."
       />
 
       <section className="bg-regal-blue-950 text-white section !pb-14">
@@ -40,7 +40,7 @@ export default function Contact() {
                 <Phone className="h-5 w-5 text-sky-dark mt-0.5 shrink-0" />
                 <div>
                   <p className="font-semibold text-charcoal">Phone</p>
-                  <a href="tel:7186874683" className="text-charcoal-light hover:text-regal-blue">718.687.4683</a>
+                  <a href="tel:7185361200" className="text-charcoal-light hover:text-regal-blue">718.536.1200</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">

@@ -43,8 +43,8 @@ export default function Footer() {
               <span>1449 37th Street<br />Brooklyn, NY 11218</span>
             </li>
             <li>
-              <a href="tel:7186874683" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="h-4 w-4" /> 718.687.4683
+              <a href="tel:7185361200" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="h-4 w-4" /> 718.536.1200
               </a>
             </li>
             <li>

@@ -38,7 +38,7 @@ export default function Home() {
               <span className="text-sky">Managed Like You Own It.</span>
             </h1>
             <p className="mt-6 text-lg text-sky-light/90 max-w-xl leading-relaxed">
-              Altmax Property Management runs the full picture for condo and co-op boards across New York
+              Altmax Property Management runs the full picture for Condo and Co-op buildings across New York
               City — common charge collection, board communication, maintenance, compliance, budgeting, and
               capital planning — backed by modern technology and a team that actually answers the phone.
             </p>
@@ -47,8 +47,8 @@ export default function Home() {
               <Link to="/contact" className="btn-accent">
                 Request a Proposal <ArrowRight className="h-4 w-4" />
               </Link>
-              <a href="tel:7186874683" className="btn-secondary bg-transparent border-white/30 text-white hover:border-white">
-                Call 718.687.4683
+              <a href="tel:7185361200" className="btn-secondary bg-transparent border-white/30 text-white hover:border-white">
+                Call 718.536.1200
               </a>
             </div>
 
@@ -220,8 +220,8 @@ export default function Home() {
             <Link to="/contact" className="btn-accent">
               Request a Proposal <ArrowRight className="h-4 w-4" />
             </Link>
-            <a href="tel:7186874683" className="btn-secondary bg-transparent border-white/30 text-white hover:border-white">
-              718.687.4683
+            <a href="tel:7185361200" className="btn-secondary bg-transparent border-white/30 text-white hover:border-white">
+              718.536.1200
             </a>
           </div>
         </div>

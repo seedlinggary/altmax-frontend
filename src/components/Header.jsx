@@ -30,9 +30,9 @@ export default function Header() {
     >
       <div className="border-b border-regal-blue-100/60 bg-regal-blue-950 hidden sm:block">
         <div className="container-page flex items-center justify-between py-1.5 text-xs text-sky-light">
-          <span>Serving Condo & Co-op Boards Across NYC Since 2011</span>
-          <a href="tel:7186874683" className="flex items-center gap-1.5 hover:text-white transition-colors">
-            <Phone className="h-3 w-3" /> 718.687.4683
+          <span>Servicing Condos & Co-ops Across NYC</span>
+          <a href="tel:7185361200" className="flex items-center gap-1.5 hover:text-white transition-colors">
+            <Phone className="h-3 w-3" /> 718.536.1200
           </a>
         </div>
       </div>
@@ -96,8 +96,8 @@ export default function Header() {
             <Link to="/contact" onClick={() => setOpen(false)} className="btn-primary mt-4 w-full">
               Request a Proposal
             </Link>
-            <a href="tel:7186874683" className="btn-secondary mt-2 w-full">
-              <Phone className="h-4 w-4" /> 718.687.4683
+            <a href="tel:7185361200" className="btn-secondary mt-2 w-full">
+              <Phone className="h-4 w-4" /> 718.536.1200
             </a>
           </nav>
         </div>
