@@ -17,7 +17,7 @@ export default function Services() {
         <div className="container-page">
           <p className="eyebrow text-sky-light">Our Services</p>
           <h1 className="mt-3 text-4xl sm:text-5xl text-white max-w-3xl">
-            Everything your board needs, in one place.
+            Everything your building needs, in one place.
           </h1>
           <p className="mt-5 text-lg text-sky-light/90 max-w-2xl leading-relaxed">
             Full-service management for condominiums and cooperatives — from daily operations and financial

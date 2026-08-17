@@ -73,14 +73,14 @@ export const services = [
     slug: 'local-law-legal-compliance',
     icon: 'ShieldCheck',
     title: 'Local Law & Legal Compliance',
-    short: 'We track NYC’s ever-changing compliance calendar so your board never misses a filing or inspection deadline.',
+    short: 'We track NYC’s ever-changing compliance calendar so you never miss a filing or inspection deadline.',
     description:
       "New York City's compliance requirements change often and carry real penalties for missed deadlines. We monitor and manage filings for Local Law 11 facade inspections, Local Law 84 & 97 energy benchmarking, Local Law 87 energy audits, Local Law 152 gas piping inspections, elevator and boiler filings, and fire safety systems — so your building stays ahead of the calendar, not behind it.",
     points: [
       'Local Law 11, 84, 87, 97, and 152 tracking & filing',
       'Elevator inspections and boiler filings',
       'Fire safety system compliance',
-      'Proactive deadline alerts to the board',
+      'Proactive deadline alerts',
     ],
   },
   {
@@ -102,7 +102,7 @@ export const services = [
     title: 'Capital Projects',
     short: 'Planning and oversight for major renovations and infrastructure work, from bidding through final sign-off.',
     description:
-      "Roof replacements, facade restoration, elevator modernization, local law remediation — capital projects carry financial and logistical risk if they're not managed closely. We help boards plan realistically, vet contractors, and stay on top of projects from the first bid to the final walkthrough.",
+      "Roof replacements, facade restoration, elevator modernization, local law remediation — capital projects carry financial and logistical risk if they're not managed closely. We plan realistically, vet contractors, and stay on top of projects from the first bid to the final walkthrough.",
     points: [
       'Long-term capital improvement planning',
       'Contractor bidding and vetting support',

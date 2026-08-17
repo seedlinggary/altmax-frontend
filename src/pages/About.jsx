@@ -18,13 +18,13 @@ const TIMELINE = [
     year: '2011–2021',
     title: 'A decade of range',
     description:
-      'Over the following ten years, we managed everything from small walk-ups to portfolios of several hundred units on behalf of real estate family offices — learning what NYC boards actually need from a manager.',
+      'Over the following ten years, we managed everything from small walk-ups to portfolios of several hundred units on behalf of real estate family offices.',
   },
   {
     year: '2021',
     title: 'Altmax Property Management launches',
     description:
-      'We launched Altmax to focus that experience exclusively on condominium and cooperative boards — bringing family-office-level financial discipline to buildings of every size.',
+      'We launched Altmax to focus that experience exclusively on condominium and cooperative buildings — bringing family-office-level financial discipline to buildings of every size.',
   },
   {
     year: 'Today',
@@ -40,7 +40,7 @@ export default function About() {
       <SEO
         path="/about"
         title="About Us"
-        description="Since 2011, Altmax Property Management has managed NYC properties from small co-ops to large condominium portfolios. In 2021 we launched Altmax to focus exclusively on condo & co-op boards."
+        description="Since 2011, Altmax Property Management has managed NYC properties from small co-ops to large condominium portfolios. In 2021 we launched Altmax to focus exclusively on condo & co-op buildings."
       />
 
       <section className="bg-regal-blue-950 text-white section !pb-16">
@@ -53,7 +53,7 @@ export default function About() {
             Altmax Property Management has been actively managing properties in New York City since 2011 —
             from small 24-unit buildings to portfolios of several hundred units for real estate family
             offices. In 2021, we launched Altmax to bring that experience to condominium and cooperative
-            boards directly, and today we manage exclusively condos & co-ops across NYC.
+            buildings directly, and today we manage exclusively condos & co-ops across NYC.
           </p>
           <div className="mt-6">
             <GoogleRatingBadge variant="dark" />
@@ -115,7 +115,7 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[...newDevelopments.slice(0, 2), ...establishedBuildings.slice(0, 2)].map((p, i) => (
-              <PropertyCard key={p.name} {...p} style={i < 2 ? 'new' : 'classic'} />
+              <PropertyCard key={`${i < 2 ? 'new' : 'classic'}-${p.variant}`} {...p} style={i < 2 ? 'new' : 'classic'} />
             ))}
           </div>
         </div>

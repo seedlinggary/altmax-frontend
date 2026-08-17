@@ -86,7 +86,7 @@ export default function Home() {
             <p className="mt-4 text-charcoal-light leading-relaxed">
               Since 2011 our team has managed properties ranging from 24-unit walk-ups to portfolios of
               several hundred units for real estate family offices. In 2021, we launched Altmax Property
-              Management to bring that same standard of care to condo and co-op boards directly.
+              Management to bring that same standard of care to condo and co-op buildings directly.
             </p>
             <Link to="/about" className="inline-flex items-center gap-1.5 mt-6 font-semibold text-regal-blue link-underline">
               Read our story <ArrowRight className="h-4 w-4" />
@@ -115,10 +115,10 @@ export default function Home() {
         <div className="container-page">
           <div className="max-w-2xl">
             <p className="eyebrow">What We Do</p>
-            <h2 className="mt-2 text-3xl sm:text-4xl">Full-Service Management, Built for Boards</h2>
+            <h2 className="mt-2 text-3xl sm:text-4xl">Full-Service Management</h2>
             <p className="mt-4 text-charcoal-light leading-relaxed">
               From day-to-day operations to long-term capital planning, we cover every function a condo or
-              co-op board needs — under one roof, with one point of contact.
+              co-op building needs — under one roof, with one point of contact.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -173,7 +173,7 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {newDevelopments.map((p) => (
-                <PropertyCard key={p.name} {...p} style="new" />
+                <PropertyCard key={`new-${p.variant}`} {...p} style="new" />
               ))}
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {establishedBuildings.map((p) => (
-                <PropertyCard key={p.name} {...p} style="classic" />
+                <PropertyCard key={`classic-${p.variant}`} {...p} style="classic" />
               ))}
             </div>
           </div>

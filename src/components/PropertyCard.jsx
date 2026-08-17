@@ -1,6 +1,5 @@
 // Stylized building illustrations standing in for real photography.
-// Swap in actual photos (see src/assets/properties/README.md) when available —
-// the "Illustrative" tag disappears automatically once `photo` is passed in.
+// The "Illustrative" tag disappears automatically once a `photo` is passed in.
 
 function ModernBuilding({ accent }) {
   return (
@@ -68,16 +67,19 @@ function ClassicBuilding({ accent }) {
   )
 }
 
-export default function PropertyCard({ name, address, style = 'new', variant = 1, photo }) {
+// No name/address is shown — these are sample photos illustrating NYC building
+// styles Altmax works with, not buildings currently under Altmax management.
+export default function PropertyCard({ style = 'new', variant = 1, photo }) {
   const isNew = style === 'new'
   const palettes = isNew ? ['#3a72c0', '#1c5aa8', '#4FA6E8', '#0a3f85'] : ['#8a6d52', '#9c7d5e', '#7a5f47', '#a3865f']
   const accent = palettes[(variant - 1) % palettes.length]
+  const alt = isNew ? 'Sample new-construction NYC condominium' : 'Sample established NYC co-op building'
 
   return (
     <figure className="group overflow-hidden rounded-xl bg-white shadow-card border border-black/5">
       <div className="relative aspect-[4/3] overflow-hidden">
         {photo ? (
-          <img src={photo} alt={`${name}, ${address}`} className="h-full w-full object-cover" loading="lazy" />
+          <img src={photo} alt={alt} className="h-full w-full object-cover" loading="lazy" />
         ) : (
           <>
             {isNew ? <ModernBuilding accent={accent} /> : <ClassicBuilding accent={accent} />}
@@ -87,10 +89,6 @@ export default function PropertyCard({ name, address, style = 'new', variant = 1
           </>
         )}
       </div>
-      <figcaption className="p-4">
-        <p className="font-sans font-semibold text-charcoal">{name}</p>
-        <p className="font-sans text-sm text-charcoal-light">{address}</p>
-      </figcaption>
     </figure>
   )
 }

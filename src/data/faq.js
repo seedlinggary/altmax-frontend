@@ -60,7 +60,7 @@ export const faqCategories = [
       {
         question: 'Can you help prepare annual operating budgets?',
         answer:
-          'Yes. We build annual budgets with your board based on historical expenses, projected costs, and upcoming capital needs — aimed at long-term financial stability without unnecessary strain on operating expenses.',
+          'Yes. We prepare annual budgets based on historical expenses, projected costs, and upcoming capital needs — aimed at long-term financial stability without unnecessary strain on operating expenses.',
       },
       {
         question: 'Do you assist with audits and tax preparation?',
