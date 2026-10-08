@@ -15,6 +15,7 @@ function GoogleG() {
 export default function GoogleRatingBadge({ variant = 'light', className = '' }) {
   const { rating, reviewCount, placeUrl } = googleReviews
   const isDark = variant === 'dark'
+  const hasRating = typeof rating === 'number' && typeof reviewCount === 'number'
 
   return (
     <a
@@ -28,24 +29,30 @@ export default function GoogleRatingBadge({ variant = 'light', className = '' })
       } ${className}`}
     >
       <GoogleG />
-      <div className="flex flex-col leading-tight">
-        <span className={`flex items-center gap-1 font-sans font-bold text-sm ${isDark ? 'text-white' : 'text-charcoal'}`}>
-          {rating.toFixed(1)}
-          <span className="flex items-center">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star
-                key={i}
-                className="h-3.5 w-3.5"
-                fill={i < Math.round(rating) ? '#FFC107' : 'none'}
-                stroke={i < Math.round(rating) ? '#FFC107' : '#9CA3AF'}
-              />
-            ))}
+      {hasRating ? (
+        <div className="flex flex-col leading-tight">
+          <span className={`flex items-center gap-1 font-sans font-bold text-sm ${isDark ? 'text-white' : 'text-charcoal'}`}>
+            {rating.toFixed(1)}
+            <span className="flex items-center">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-3.5 w-3.5"
+                  fill={i < Math.round(rating) ? '#FFC107' : 'none'}
+                  stroke={i < Math.round(rating) ? '#FFC107' : '#9CA3AF'}
+                />
+              ))}
+            </span>
           </span>
+          <span className={`text-xs ${isDark ? 'text-sky-light/80' : 'text-charcoal-light'}`}>
+            {reviewCount} Google reviews
+          </span>
+        </div>
+      ) : (
+        <span className={`font-sans font-semibold text-sm ${isDark ? 'text-white' : 'text-charcoal'}`}>
+          Read our reviews on Google
         </span>
-        <span className={`text-xs ${isDark ? 'text-sky-light/80' : 'text-charcoal-light'}`}>
-          {reviewCount} Google reviews
-        </span>
-      </div>
+      )}
     </a>
   )
 }
